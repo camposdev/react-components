@@ -1,16 +1,16 @@
 import React from "react";
-import styled from "styled-components";
+// import styled from "styled-components";
 
-const WrapButton = styled.button`
-  background: pink;
-  color: red;
-  border: 0;
-  padding: 10px;
-`;
+// const WrapButton = styled.button`
+//   background: pink;
+//   color: red;
+//   border: 0;
+//   padding: 10px;
+// `;
 
 function Button(props) {
   return (
-    <WrapButton>{props.children}</WrapButton>
+    <button>{props.children}</button>
   )
 }
 

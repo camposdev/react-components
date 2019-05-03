@@ -39,6 +39,6 @@ module.exports = {
     path: path.resolve(__dirname, 'build/'),
     publicPath: '',
     filename: 'index.js',
-    libraryTarget: 'commonjs',
+    libraryTarget: 'umd',
   },
 };
