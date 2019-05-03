@@ -5,13 +5,15 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.jsx?$/,
+        test: /\.(js|jsx)$/,
+        exclude: /node_modules/,
         use: {
 					loader: 'babel-loader',
 				},
       },
       {
         test: /\.(css|scss)$/,
+        exclude: /node_modules/,
         use: [
           { loader: 'style-loader' },
 					{ loader: 'css-loader' },
@@ -20,6 +22,7 @@ module.exports = {
       },
       {
         test: /\.(png|gif|jpg|svg)$/,
+        exclude: /node_modules/,
 				use: {
 					loader: 'url-loader',
 					options: {
@@ -30,7 +33,7 @@ module.exports = {
     ],
   },
   resolve: {
-		extensions: ['.scss', '.js', '.json', '.png', '.gif', '.jpg', '.svg'],
+		extensions: ['.scss', '.js', '.jsx', '.json', '.png', '.gif', '.jpg', '.svg'],
   },
   output: {
     path: path.resolve(__dirname, 'build/'),
