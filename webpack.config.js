@@ -40,9 +40,5 @@ module.exports = {
     publicPath: '',
     filename: 'index.js',
     libraryTarget: 'umd',
-  },
-  externals: {
-    'react': 'React',
-    'react-dom': 'ReactDOM'
   }
 };
