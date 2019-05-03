@@ -41,4 +41,8 @@ module.exports = {
     filename: 'index.js',
     libraryTarget: 'umd',
   },
+  externals: {
+    'react': 'React',
+    'react-dom': 'ReactDOM'
+  }
 };
