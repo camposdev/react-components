@@ -8,7 +8,7 @@ const WrapButton = styled.button`
   padding: 10px;
 `;
 
-const Button = props => {
+function Button(props) {
   return (
     <WrapButton>{props.children}</WrapButton>
   )
